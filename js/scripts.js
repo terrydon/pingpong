@@ -1,13 +1,13 @@
 // backend logic
 for (var number=1; number<=userinput; number++){
   if (number%3===0) {
-    return Ping
+    console.log (Ping);
   }
   else if (number%5===0) {
-    return pong
+    console.log (pong);
   }
   else if (number%15===0) {
-    return pingpong
+    console.log (pingpong);
   }
 }
 
@@ -22,6 +22,7 @@ for (var number=1; number<=userinput; number++){
 
 //frontend logic
 $(document).ready (function(){
+  var userinput;
   $("#submitform").submit(function(event){
      event.preventDefault()
      var number = $("#text-Input").val()
