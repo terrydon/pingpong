@@ -1,31 +1,47 @@
+/*adding css to container one*/
 #con1 {
   background-color: #FFE4C4;
   height: 300px;
   text-align: center;
 }
+/*modifying paragraph 1*/
 #p1 {
   font-size: 60px;
   text-align: center;
   padding-top: 5%;
 }
 #p2{
-  font-size: 15px;
+  font-size: 30px;
 }
 #p3{
   color: #FFE4C4;
+  font-size: 20px;
 }
 #p4{
   color: white;
 }
 #p5{
   color: #FFE4C4;
+  font-size: 20px;
 }
 #p6{
   color: blue;
 }
 #p7{
 color: #FFE4C4;
+font-size: 20px;
 }
 #p8{
   color: white;
+}
+#con2{
+  background-color: green;
+  height: 500px;
+}
+#whole{
+  background-color: grey;
+  height: 500px;
+}
+#text-Input{
+  width: 20%;
 }
