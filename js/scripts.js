@@ -30,15 +30,15 @@ var func = function stuff(){
 
 //frontend logic
 $(document).ready(function(){
- $("#userInput").submit(function(event){
+ $("#submitform").submit(function(event){
    event.preventDefault();
-   $("#output").empty();
-   var addTo = parseInt($("input#countTo").val());
-   var output = countUp(countTo);
 
-   output.forEach(function(item){
-     $("#output").append('<li>' + item + '</li>');
-   });
+   var output = $("#text-Input").val();
+   var display = func(output);
+
+
+     //$("#output").append('<li>' + item + '</li>');
+
 
  });
 });
