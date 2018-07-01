@@ -1,11 +1,10 @@
 // backend logic
 var countUp = function(countTo){
  var result = [];
- // for loop
+ // looping for
  for(var i = 1; i <= countTo; i++){
      var index = result.indexOf(i);
-     // using if else if statement
-
+     // use of module
      if(i % 15 === 0) {
        result.splice(index, 0);
        result.push('pingpong');
@@ -36,7 +35,7 @@ $(document).ready(function(){
  $("#userInput").submit(function(event){
    event.preventDefault();
    $("#output").empty();
-   var countTo = parseInt($("input#countTo").val());
+   var countTo = parseInt($("input#userInput").val());
    var output = countUp(countTo);
 
    output.forEach(function(item){
