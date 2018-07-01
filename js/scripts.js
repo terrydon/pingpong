@@ -5,7 +5,7 @@ var countUp = function(countTo){
  for(var i = 1; i <= countTo; i++){
      var index = result.indexOf(i);
      // using if else if statement
-     
+
      if(i % 15 === 0) {
        result.splice(index, 0);
        result.push('pingpong');
@@ -32,16 +32,16 @@ var countUp = function(countTo){
 
 
 //frontend logic
-$(document).ready (function(){
-  var userinput; // defining userinput
-  $("#submitform").submit(function(event){// targeting the for using id
-     event.preventDefault()
-     var number = $("#text-Input").val()
-    $("#results").append("<li>"+number+"</li>")
-    $("#text-Input").val("")
-  })
+$(document).ready(function(){
+ $("#userInput").submit(function(event){
+   event.preventDefault();
+   $("#output").empty();
+   var countTo = parseInt($("input#countTo").val());
+   var output = countUp(countTo);
 
-})
-//$(document).ready(function () {
-//
-//})
+   output.forEach(function(item){
+     $("#output").append('<li>' + item + '</li>');
+   });
+
+ });
+});
