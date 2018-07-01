@@ -1,26 +1,24 @@
 // backend logic
-var countUp = function(countTo){
- var result = [];
- // looping for
- for(var i = 1; i <= countTo; i++){
-     var index = result.indexOf(i);
-     // use of module
-     if(i % 15 === 0) {
-       result.splice(index, 0);
-       result.push('pingpong');
-     }else if(i % 5 === 0) {
-       result.splice(index, 0);
-       result.push('pong');
-     }else if(i % 3 === 0) {
-       result.splice(index, 0);
-       result.push('ping');
-     }else{
-       result.push(i);
-     }
- }
+var i = "ping";
+var o = "pong";
+var pp = "pingpong";
+var output;
+var func = function stuff(){
+  for(var number = 1; number <= output; number++){
+        if(number % 15 === 0) {
+        return pp;
+      }else if(i % 5 === 0) {
+      return o;
+      }else if(i % 3 === 0) {
+        return i;
+      }else{
+        return number;
+      }
+  }
+ };
 
- return result;
-};
+ // looping for
+
 
 
 
@@ -35,7 +33,7 @@ $(document).ready(function(){
  $("#userInput").submit(function(event){
    event.preventDefault();
    $("#output").empty();
-   var countTo = parseInt($("input#userInput").val());
+   var addTo = parseInt($("input#countTo").val());
    var output = countUp(countTo);
 
    output.forEach(function(item){
