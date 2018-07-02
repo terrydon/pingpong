@@ -1,14 +1,19 @@
 /*adding css to container one*/
 #con1 {
-  background-color: #FFE4C4;
-  height: 300px;
+  background-image: url("../pong.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   text-align: center;
+
 }
 /*modifying paragraph 1*/
 #p1 {
   font-size: 60px;
   text-align: center;
   padding-top: 5%;
+  color: green;
 }
 #p2{
   font-size: 30px;
@@ -39,9 +44,16 @@ font-size: 20px;
   height: 500px;
 }
 #whole{
-  background-color: grey;
+  background-image: url("../whole.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bac
   height: 500px;
 }
 #text-Input{
   width: 20%;
+}
+body {
+  font-family: 'Acme', sans-serif;
 }
